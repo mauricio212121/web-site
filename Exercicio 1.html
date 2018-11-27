@@ -1,0 +1,29 @@
+<html><head>
+	<script>
+		function maiorMenor (valor)
+		{
+			if(valor > 10)
+			{
+				alert("O valor "+valor+ " é maior que 10");
+			}
+			else if(valor < 10)
+			{
+				alert("O valor "+valor+ " é menor que 10");
+			}
+			else
+			{
+				alert ("O valor "+valor+ " é igual a 10");
+			}
+		}
+	</script>
+	</head>
+	<body>
+		<form name ="f">
+		<label for="v">Digite o valor </label>
+		<input type="number" name="v" step="0,01">
+		<button type="button" onclick="maiorMenor(document.f.v.value);">
+		Calcular!
+	</button>
+	</form>
+	</body>
+</html>
